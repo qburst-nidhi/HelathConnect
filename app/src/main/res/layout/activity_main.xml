@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvsteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="18dp"
+        android:layout_margin="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etsteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvsteps"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Enter the steps"
+        android:layout_marginStart="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvsteps"
+        android:textSize="18dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/tvcalories"
+        app:layout_constraintTop_toBottomOf="@+id/tvsteps"
+        android:hint="Enter the Calories"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvcalories"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="UPDATE"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvtoday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdate"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStepsRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvtoday"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvstepsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvtoday"
+        app:layout_constraintStart_toEndOf="@+id/tvStepsRead"
+        android:text="0"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvcaloriesRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories:"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvCaloriesCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvtoday"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvCaloriesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvtoday"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="0"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Average this month:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvStepsRead"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgSteps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steps:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvgMonth"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvStepsAvgCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvgMonth"
+        app:layout_constraintStart_toEndOf="@+id/tvAvgSteps"
+        android:text="0"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgcalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calories:"
+        android:textSize="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvAvgCaloriesCount"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvgMonth"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAvgCaloriesCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/tvAvgMonth"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="0"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="10dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

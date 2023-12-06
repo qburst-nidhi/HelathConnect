@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">HealthConnectApiDemo</string>
+    <string name="privacy_policy">Lorem ipsum dolor sit amet, consectetur adipiscing elit....</string>
+    <string name="format_calories_average">%.2f</string>
+
+</resources>
